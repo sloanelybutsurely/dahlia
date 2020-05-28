@@ -1,27 +1,27 @@
-# TSDX Bootstrap
+# 🌺 Dahlia
 
-This project was bootstrapped with [TSDX](https://github.com/jaredpalmer/tsdx).
+> A TypeScript-PostgreSQL API for _truely_ type-safe querying.
 
-## Local Development
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![CI](https://github.com/zperrault/dahlia/workflows/CI/badge.svg?branch=master)](https://github.com/zperrault/dahlia/actions?query=workflow%3ACI+branch%3Amaster)
 
-Below is a list of commands you will probably find useful.
+## Table of Contents
 
-### `npm start` or `yarn start`
+1. [Motivation](#motivation)
+1. [Features](#features)
+1. [Example](#example)
 
-Runs the project in development/watch mode. Your project will be rebuilt upon changes. TSDX has a special logger for you convenience. Error messages are pretty printed and formatted for compatibility VS Code's Problems tab.
+## Motivation
 
-<img src="https://user-images.githubusercontent.com/4060187/52168303-574d3a00-26f6-11e9-9f3b-71dbec9ebfcb.gif" width="600" />
+This is why I made this thing.
 
-Your library will be rebuilt if you make edits.
+## Features
 
-### `npm run build` or `yarn build`
+- Something here
 
-Bundles the package to the `dist` folder.
-The package is optimized and bundled with Rollup into multiple formats (CommonJS, UMD, and ES Module).
+## Example
 
-<img src="https://user-images.githubusercontent.com/4060187/52168322-a98e5b00-26f6-11e9-8cf6-222d716b75ef.gif" width="600" />
+```typescript
+import * as dahlia from 'dahlia-ts';
 
-### `npm test` or `yarn test`
-
-Runs the test watcher (Jest) in an interactive mode.
-By default, runs tests related to files changed since the last commit.
+dahlia.query('or something?');
+```
