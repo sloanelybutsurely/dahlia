@@ -15,7 +15,6 @@
     "prepare": "tsdx build",
     "semantic-release": "semantic-release"
   },
-  "peerDependencies": {},
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint",
@@ -34,11 +33,19 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "fp-ts": "^2.6.2",
     "husky": "^4.2.5",
+    "io-ts": "^2.2.4",
+    "pg": "^8.2.1",
     "semantic-release": "^17.0.8",
     "tsdx": "^0.13.2",
     "tslib": "^2.0.0",
     "typescript": "^3.9.3"
+  },
+  "peerDependencies": {
+    "fp-ts": "^2.6.2",
+    "io-ts": "^2.2.4",
+    "pg": "^8.2.1"
   },
   "repository": {
     "type": "git",
