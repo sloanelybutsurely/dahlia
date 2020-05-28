@@ -27,7 +27,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "dahlia",
+  "name": "dahlia-ts",
   "author": "Zach Perrault",
   "module": "dist/dahlia.esm.js",
   "devDependencies": {
