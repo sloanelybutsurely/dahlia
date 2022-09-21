@@ -64,14 +64,13 @@ import { query } from 'dahlia-ts'
       name: t.string,
       alias: t.union([t.null, t.string]),
     })
-    const UserRowT = t.TypeOf<typeof UserRow>
 
     console.log(
       pipe(
         await query(client, UserRow, 'SELECT * FROM users;')
         fold(
-          rows => `Loaded ${rows.length} successfully!`,
           errors => `Failed to load users:\n${errors.join('\n\t')}`,
+          rows => `Loaded ${rows.length} successfully!`,
         )
       )
     )
